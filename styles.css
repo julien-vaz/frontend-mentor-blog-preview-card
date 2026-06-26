@@ -1,5 +1,9 @@
 :root {
-    font-size: 100%;
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+    --black: hsl(0, 0%, 0%);
 }
 
 * {
@@ -13,7 +17,7 @@ body {
     
     font-family: 'Figtree', sans-serif;
     line-height: 150%;
-    letter-spacing: 0px;
+    letter-spacing: 0rem;
 }
 
 .page {
@@ -22,7 +26,7 @@ body {
     align-items: center;
 
     min-height: 100vh;
-    background-color: hsl(47, 88%, 63%);
+    background-color: var(--yellow);
 }
 
 .card {
@@ -40,11 +44,11 @@ body {
     margin: 0 1.5rem;
     padding: 1.5rem;
 
-    border: 1px inset hsl(0, 0%, 7%);
+    border: 1px inset var(--gray-500);
     border-radius: 20px;
-    box-shadow: 8px 8px 0 0 hsl(0, 0%, 0%);
+    box-shadow: 8px 8px 0 0 var(--black);
 
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--white);
 }
 
 .card-image-container {
@@ -92,8 +96,8 @@ body {
 
     border-radius: 4px;
 
-    background-color: hsl(47, 88%, 63%);
-    color: hsl(0, 0%, 7%);
+    background-color: var(--yellow);
+    color: var(--gray-950);
 
     font-size: clamp(0.75rem, 0.706rem + 0.1878vw, 0.875rem);
     font-weight: 800;
@@ -140,7 +144,7 @@ body {
 
     font-size: clamp(0.875rem, 0.831rem + 0.1878vw, 1rem);
 
-    color: hsl(0, 0%, 42%);
+    color: var(--gray-500);
 }
 
 .author {
@@ -170,5 +174,11 @@ body {
 
 .blog-title:hover,
 .blog-title:focus {
-    color: hsl(47, 88%, 63%); 
+    color: var(--yellow); 
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .blog-title {
+        transition-duration: 1s;
+    }
 }
