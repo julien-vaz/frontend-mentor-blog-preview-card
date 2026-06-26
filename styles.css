@@ -125,6 +125,9 @@ body {
     max-height: 36px;
 
     font-size: clamp(1.25rem, 1.162rem + 0.3756vw, 1.5rem);
+
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .blog-short-description {
@@ -165,3 +168,7 @@ body {
     font-weight: 800;
 }
 
+.blog-title:hover,
+.blog-title:focus {
+    color: hsl(47, 88%, 63%); 
+}
