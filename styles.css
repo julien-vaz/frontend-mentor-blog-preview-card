@@ -36,7 +36,7 @@ body {
 
     min-width: 327px;
     width: 100%;
-    max-width: 386px;
+    max-width: 384px;
     min-height: 501px;
     height: fit-content;
     max-height: 522px;
@@ -74,25 +74,16 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-
-    min-width: 279px;
-    width: 100%;
-    min-height: 173px;
-    height: 12.125rem;
 }
 
 .category {
     display: flex;
     align-items: center;
 
-    min-width: 73px;
-    width: 100%;
-    max-width: 82px;
-    min-height: 26px;
-    height: fit-content;
-    max-height: 29px;
+    width: clamp(4.5625rem, 4.3644rem + 0.8451vw, 5.125rem);
+    height: clamp(1.625rem, 1.559rem + 0.2817vw, 1.8125rem);
 
-    padding: 0.25rem 0.75rem;
+    padding: 0 0.75rem;
 
     border-radius: 4px;
 
@@ -108,12 +99,7 @@ body {
     display: flex;
     align-items: center;
 
-    min-width: 123px;
-    width: 100%;
-    max-width: 143px;
-    min-height: 18px;
-    height: fit-content;
-    max-height: 21px;
+    height: clamp(1.125rem, 1.059rem + 0.2817vw, 1.3125rem);
     
     font-size: clamp(0.75rem, 0.706rem + 0.1878vw, 0.875rem);
     font-weight: 500;
@@ -123,10 +109,7 @@ body {
     display: flex;
     align-items: center;
 
-    width: 100%; 
-    min-height: 30px;
-    height: 2.25rem;
-    max-height: 36px;
+    height: clamp(1.875rem, 1.743rem + 0.5634vw, 2.25rem);
 
     font-size: clamp(1.25rem, 1.162rem + 0.3756vw, 1.5rem);
 
@@ -138,9 +121,7 @@ body {
     display: flex;
     align-items: center;
 
-    min-height: 63px;
-    height: 4.5rem;
-    max-height: 72px;
+    height: clamp(3.9375rem, 3.7394rem + 0.8451vw, 4.5rem);
 
     font-size: clamp(0.875rem, 0.831rem + 0.1878vw, 1rem);
 
@@ -164,9 +145,6 @@ body {
 .author-name {
     display: flex;
     align-items: center;
-
-    width: 85px;
-    height: 21px;
 
     font-size: 0.875rem;
     font-weight: 800;
